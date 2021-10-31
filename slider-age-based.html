@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Input Range Slider</title>
+    <link rel="stylesheet" href="slider-01.css">
+    
+</head>
+
+<body>
+    <div class="container">
+  
+        <div class="type-header">Death Benefit</div>
+        <div class="card-border">
+        <div class="range-slider">
+          <span id="death-tool-tip" class="rs-label">0</span>
+          <input id="death-slider" class="rs-range" type="range" value="261000" min="0" max="10000000" step="1000">
+        </div>
+        <div class="box-minmax">
+          <span>$0</span><span id="death-max-label">$10,000,000</span>
+        </div>
+        <div class="value-input"><span>Chosen benefit</span><span><input id="death-fixed-text-input" class="fixed-benefit-text-input" type="number" value="261,000" step="261000" onkeydown="return false;" ></span></div>
+        </div>
+        
+        <div class="type-header">TPD Benefit</div>
+        <div class="card-border">
+        <div class="range-slider">
+          <span id="tpd-tool-tip" class="rs-label">0</span>
+          <input id="tpd-slider" class="rs-range" type="range" value="261000" min="0" max="261000" step="1000">
+        </div>
+        <div class="box-minmax">
+          <span>$0</span><span id="tpd-max-label">$261000</span>
+        </div>
+    </div>
+      </div>
+      <script src="slider-01.js"> </script>
+  </body>
+  </html>
